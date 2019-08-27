@@ -22,8 +22,9 @@ class ServerObj{
     struct sockaddr_in server;
     struct sockaddr_in client;
     socklen_t ssize;
-
+    int opt;
     public:
+    void InitServerAddr();
     int CreateMasterSocket();
 };
 
